@@ -571,6 +571,7 @@ a{
     position: relative;
 
 }
+
 .about-img{
 	width: 20rem;
     height: 100%;
@@ -598,6 +599,7 @@ a{
 	font-weight: 800;
 	color: white;
 	width: 75%;
+	margin-bottom: 0;
 }
 .seccion-nombre2{
 	font-family: 'Montserrat', sans-serif;
@@ -798,12 +800,36 @@ a{
 	transform: scale(1.1);
 	
 }
+
+.contacto-img {
+	padding-top: 6rem;
+
+
+}
+.contacto-img img{
+	position: absolute;
+	width: 100%;
+}
+.main-contacto__content{
+	 padding-top: 50px;
+    position: relative;
+}
+
+.formulario{
+
+}
+#contact-form {
+  max-width: 1208px;
+  max-width: 75.5rem;
+  margin: 0 auto;
+}
+
+ 
 .footer{
     background-color: #003949;
-    
     width: 100%;
     height: 30vh;
-    margin-top: 100px;
+  /*  margin-top: 100px;*/
 }
 .footergrid{
 	align-items: center;
@@ -817,6 +843,7 @@ a{
 
 .social {
 	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	
 	right: 0; /* Establecemos la barra en la izquierda */
 	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
 	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
@@ -824,13 +851,14 @@ a{
  
 	.social ul {
 		list-style: none;
+		padding: 0;
 	}
  
 	.social ul li a {
 		display: inline-flex;
 		color:#fff;
 		background: #000;
-		padding: 25px 30px;
+		padding: 30px 25px;
 		text-decoration: none;
 		-webkit-transition:all 500ms ease;
 		-o-transition:all 500ms ease;
@@ -843,7 +871,7 @@ a{
  /* Establecemos los colores de cada red social, aprovechando su class */
 	.social ul li .icon-facebook {
 		background:#003949;
-		 border-radius: 20px 0px 0px;
+		border-radius: 20px 0px 0px 0px;
 		background-repeat: no-repeat;
 		
 	} 
@@ -867,7 +895,7 @@ a{
  
 	.social ul li a:hover {
 		background: #209b03; /* Cambiamos el fondo cuando el usuario pase el mouse */
-		padding: 30px  30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+		padding: 30px 30px 30px 20px /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
 	}
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -1139,7 +1167,11 @@ a{
 
     .experiencia-img img {
     height: 757px;
-    padding-top: 90px}
+    }
+    .experiencia-contenido {
+    padding-left: 20px;}
+    .experiencia-descripcion {
+    font-size: 15px;}
 
     .main-services__title {
     padding-top: 10px;}
@@ -1212,7 +1244,7 @@ a{
     padding-top: 60px;}
 
     .social ul li a {
-    	padding: 15px 20px;
+    	padding: 15px 10px;
     }
 
 	.main-brand {
@@ -1275,7 +1307,7 @@ a{
     .experiencia-img img {
     position: absolute;
     width: 100%;
-    height: fit-content;
+    height: 123%;
     z-index: -1;}
 
 	.navbar {
