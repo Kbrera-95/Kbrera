@@ -39,7 +39,6 @@ button:focus{
 	padding: 0;
 	display: flex;
 	flex-direction: column;
-	height: 115px;
 }
 
 
@@ -121,8 +120,6 @@ button:focus{
 }
 
 .navbar.fixed {
-
-	height: 110px;
 
 	background-color: #fff;
 	transition: .3s ease-in-out;
@@ -620,7 +617,7 @@ a{
 	grid-template-rows: 1fr 1fr 1fr;
 
 }
-.about-text-contactame p{
+.about-text-contactame a{
 
 	font-family: 'Montserrat', sans-serif;
     color: white;
@@ -800,11 +797,14 @@ a{
 	transform: scale(1.1);
 	
 }
-
+.main-Contacto {
+background-image: url(../img/contacto.png);
+background-position: left;
+background-size: cover;
+height: 650px;
+}
 .contacto-img {
 	padding-top: 6rem;
-
-
 }
 .contacto-img img{
 	position: absolute;
@@ -866,7 +866,6 @@ a{
 	}
 	.social ul li a img{
 		width: 20px;
-		height: 25px; 
 	}
  /* Establecemos los colores de cada red social, aprovechando su class */
 	.social ul li .icon-facebook {
