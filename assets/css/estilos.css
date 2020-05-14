@@ -183,7 +183,8 @@ button:focus{
 	
 }
 
-.nav-link:hover {
+.nav-link:hover { 
+	background-color: white;
 	color: #259803;
 }
 
@@ -293,7 +294,7 @@ button:focus{
 
 
 
-.main-banner .mask .main-banner__text .main-banner__title p {
+.main-banner .mask .main-banner__text .main-banner__title h1 {
 
 	padding: 0px;
 	color: #122e54;
@@ -304,14 +305,14 @@ button:focus{
 	font-family: 'Montserrat', sans-serif;
 	margin-bottom: 8px;
 }
-.main-banner .mask .main-banner__text .main-banner__title span{
+.main-banner .mask .main-banner__text .main-banner__title p{
 	font-family: 'Montserrat', sans-serif;
 	color: #122e54;
 	font-size: 20px;
 	margin-top: 50px;
 }
 
-.main-banner .mask .main-banner__text .main-banner__title p span {
+.main-banner .mask .main-banner__text .main-banner__title h1 span {
 	padding: 0px;
 	color: #209b03;
 	font-size: 70px;
@@ -629,6 +630,12 @@ a{
     font-weight: 600;
    	display: grid;
 	grid-template-rows: 1fr 1fr ;
+}
+
+.descargarcv h3{
+	font-size: 25px;
+    font-weight: 800;
+
 }
 .buttomcv{
 	text-align-last: center;
@@ -1101,11 +1108,11 @@ height: 650px;
 	.img-services{
 		width: 100%;
 	}
-	.main-banner .mask .main-banner__text .main-banner__title p{
+	.main-banner .mask .main-banner__text .main-banner__title h1{
 		font-size: 30px;
 		margin-bottom: 6px;
 	}
-	.main-banner .mask .main-banner__text .main-banner__title p span{
+	.main-banner .mask .main-banner__text .main-banner__title h1 span{
 		font-size: 30px;
 		
 	}
@@ -1226,15 +1233,7 @@ height: 650px;
 		font-size: 18px;
 		padding: 0;
 	}
-	.main-banner .mask .main-banner__text .main-banner__title p span {
-    padding: 0px;
-    color: #0b6d06;
-    font-size: 30px;
-    font-weight: 800;
-    line-height: 1;
-    margin-bottom: 30px;
-    margin-top: 70px;
-	}
+
 	.main-banner .mask .main-banner__text{
 		width: 80%;
 		display: flex;
@@ -1252,10 +1251,7 @@ height: 650px;
 	object-fit: initial !important;
 	}
 	
-	.main-banner .mask .main-banner__text .main-banner__title p {
-		font-size: 30px;
-		padding: 0;
-	}
+	
 	.main-banner .mask .main-banner__text {
 		width: 80%;
 	}
@@ -1563,10 +1559,7 @@ height: 650px;
 	height: 100%;
 	object-fit: initial !important;}
 
-	.main-banner .mask .main-banner__text .main-banner__title p {
-		font-size: 30px;
-	}
-
+	
 	.aboutfondo-img img {
     height: 65rem;}
 
