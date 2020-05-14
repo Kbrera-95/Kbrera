@@ -135,9 +135,7 @@ button:focus{
 	padding: 0px 0;
 }
 
-.nav-item {
-	padding: 0 28px;
-}
+
 .nav-item2 {
 	border-radius: 50px;
 	color: #fff !important;
@@ -167,7 +165,7 @@ button:focus{
     padding-left: 25px !important;
 	transition: .3s ease-in-out;
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 15px;
 	text-transform: capitalize;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -633,9 +631,12 @@ a{
 	grid-template-rows: 1fr 1fr ;
 }
 .buttomcv{
+	text-align-last: center;
 	list-style: none;
 }
 .about-buttom-item2{
+	font-family: 'Montserrat', sans-serif;
+	 font-weight: 600;
 	width: 100%;
     font-size: 25px;
     background-color: #199b03;
@@ -649,12 +650,7 @@ a{
 	-webkit-box-shadow: 0px 1px 40px -5px rgba(255,255,255,1);
 }
 
-.about-buttom-item2 a{
-	font-family: 'Montserrat', sans-serif;
-    
-    font-size: 25px;
-    font-weight: 600;
-}
+
 .expreriencia{
 	 margin-top: 4%;
 }
@@ -816,8 +812,42 @@ height: 650px;
 }
 
 .formulario{
+	display: flex;
+    justify-content: center;
+}
+.formularioinput{
+  border: transparent;
+  background-color: transparent !important;
+  border-bottom: 3px solid #28a745;
+  color: white;
 
 }
+.form-control:focus {
+    /* background-color: #28a745 !important; */
+    color: white !important;
+    border-color: #28a745 !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.29);
+}
+.posicionboton{
+	width: 100%;
+   text-align: center;
+
+}
+.botonestilos{
+    width: 30%;
+    font-weight: 600;
+    font-size: 25px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 3px solid white;
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 2rem !important;}
+
+
+
 #contact-form {
   max-width: 1208px;
   max-width: 75.5rem;
@@ -837,6 +867,16 @@ height: 650px;
 	grid-template-columns: 1fr 1fr;
     display: grid;
 }
+.buttom-itemFooter{
+	font-family: 'Montserrat', sans-serif;
+	 font-weight: 600;
+	width: 50%;
+    font-size: 25px;
+    background-color: #199b03;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-align: center;
+}
 
 
 
@@ -849,55 +889,55 @@ height: 650px;
 	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
 }
  
-	.social ul {
-		list-style: none;
-		padding: 0;
-	}
+.social ul {
+	list-style: none;
+	padding: 0;
+}
  
-	.social ul li a {
-		display: inline-flex;
-		color:#fff;
-		background: #000;
-		padding: 30px 25px;
-		text-decoration: none;
-		-webkit-transition:all 500ms ease;
-		-o-transition:all 500ms ease;
-		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
-	}
-	.social ul li a img{
-		width: 20px;
-	}
+.social ul li a {
+	display: inline-flex;
+	color:#fff;
+	background: #000;
+	padding: 30px 25px;
+	text-decoration: none;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+}
+.social ul li a img{
+	width: 20px;
+}
  /* Establecemos los colores de cada red social, aprovechando su class */
-	.social ul li .icon-facebook {
-		background:#003949;
-		border-radius: 20px 0px 0px 0px;
-		background-repeat: no-repeat;
+.social ul li .icon-facebook {
+	background:#003949;
+	border-radius: 20px 0px 0px 0px;
+	background-repeat: no-repeat;
 		
-	} 
-	.social ul li .icon-instagram {
-		background: #003949;
-		background-repeat: no-repeat;
+} 
+.social ul li .icon-instagram {
+	background: #003949;
+	background-repeat: no-repeat;
 	
-	}
-	.social ul li .icon-behance {
-		background: #003949;
-		background-repeat: no-repeat;
+}
+.social ul li .icon-behance {
+	background: #003949;
+	background-repeat: no-repeat;
 	
-	}
-	.social ul li .icon-linkedin {
-		background: #003949;
-		 border-radius: 0px 0px 0px 20px;
-		background-repeat: no-repeat;
+}
+.social ul li .icon-linkedin {
+	background: #003949;
+	border-radius: 0px 0px 0px 20px;
+	background-repeat: no-repeat;
 		
-	}
+}
 	
  
-	.social ul li a:hover {
-		background: #209b03; /* Cambiamos el fondo cuando el usuario pase el mouse */
-		padding: 30px 30px 30px 20px /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
-	}
+.social ul li a:hover {
+	background: #209b03; /* Cambiamos el fondo cuando el usuario pase el mouse */
+	padding: 30px 30px 30px 20px /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+}
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (max-width: 767px) {
 	.nav-top__header {
 		display: none;
 	}
@@ -1078,7 +1118,7 @@ height: 650px;
    		width: 30%;}
 
 	.main-services-card__body2{
-		height: 300px;
+		height: 22rem;
 	} 
 	.habilidades2 {
 		padding-right: 10px;
@@ -1223,6 +1263,9 @@ height: 650px;
     display: grid;
     grid-template-columns: 1fr !important;}
 
+    .botonestilos {
+    width: 50%;}
+
 
 	.footer-logo{
 		height: 126px;
@@ -1242,8 +1285,12 @@ height: 650px;
     display: flex;
     padding-top: 60px;}
 
+    .buttom-itemFooter {
+    	width: 100%;
+    }
+
     .social ul li a {
-    	padding: 15px 10px;
+    	padding: 13px 12px;
     }
 
 	.main-brand {
@@ -1342,10 +1389,10 @@ height: 650px;
     
 
 }
-@media (min-width: 768px) and (max-width: 991px){
+@media  (max-width: 991px){
 	.main-services__content{
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 		grid-gap: 30px;
 	}
 	.habilidades-body2 {
@@ -1454,8 +1501,12 @@ height: 650px;
  
     height: 209rem;}
 
+    .buttom-itemFooter {
+    	width: 70%;
+    }
+
 }
-@media (min-width: 992px) and (max-width: 1199px){
+@media  (max-width: 1199px){
 	.main-opciones__content{
 		padding-top: 32px;
 	}
@@ -1478,7 +1529,7 @@ height: 650px;
     width: 85%;}
     .experiencia-img img {
     
-    height: 25rem;}
+    height: 52rem;}
 
     .expreriencia {
     margin-top: 3%;}
@@ -1494,7 +1545,7 @@ height: 650px;
 	.main-banner .mask .main-banner__text .main-banner__title p span {
     padding: 0px;
     color: #0b6d06;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 800;
     line-height: 1;
     margin-bottom: 30px;
@@ -1513,11 +1564,15 @@ height: 650px;
 	object-fit: initial !important;}
 
 	.main-banner .mask .main-banner__text .main-banner__title p {
-		font-size: 55px;
+		font-size: 30px;
 	}
 
 	.aboutfondo-img img {
-    height: 50rem;}
+    height: 65rem;}
+
+    .buttom-itemFooter {
+    	width: 100%;
+    }
 
 	
 }
