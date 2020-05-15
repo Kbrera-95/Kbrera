@@ -1,19 +1,13 @@
-$(function () {
+$( document ).ready(function() {
   'use strict'
 
   $('[data-toggle="offcanvas"]').on('click', function () {
     $('.offcanvas-collapse').toggleClass('open')
-  })
-})
-
-$(function () {
-  'use strict'
+  });
 
   $('.nav-link__mobile').on('click', function () {
     $('.offcanvas-collapse').removeClass('open')
-  })
-})
-
+  });
 
 // Menú fixed
 $(window).scroll(function () {
@@ -24,7 +18,6 @@ $(window).scroll(function () {
     $('.hamburger-inner').addClass('js-hamburger');
     $("#iso").addClass('img-size').attr('src', 'assets/img/Logo_CM.png').removeClass('scroll-up');
     $('.nombre-logo').addClass('nombre-logo--black');
-
   } else {
     $('.navbar-fixed-js').removeClass('fixed');
     $('.nav-link').removeClass('fixed-color');
@@ -32,10 +25,8 @@ $(window).scroll(function () {
     $('.hamburger-inner').removeClass('js-hamburger');
     $("#iso").removeClass('img-size').attr('src', 'assets/img/logo-color.png').removeClass('scroll-up');
     $('.nombre-logo').removeClass('nombre-logo--black');
-
   }
 });
-
 
 $(".hamburger").on("click", function () {
   if (!$(this).hasClass("is-active")) {
@@ -51,7 +42,6 @@ $(".hamburger").on("click", function () {
       $('.navbar-fixed-js').removeClass('fixed');
       $('.hamburger-inner').removeClass('js-hamburger');
       $('.nav-link').removeClass('fixed-color');
-
     }
   }
 });
@@ -122,5 +112,11 @@ $('.main-products__content').slick({
     // instead of a settings object
     ]
   });
+$("#submit").click(function () {
+  if ($("#notificacion")) {
+    $("#notificacion").css('display', 'block');
+    $("#notificacion").delay(6500).fadeOut(1500,"swing");
+  }
+});
 
-
+});
