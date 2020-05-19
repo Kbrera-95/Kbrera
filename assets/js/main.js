@@ -112,11 +112,54 @@ $('.main-products__content').slick({
     // instead of a settings object
     ]
   });
-$("#submit").click(function () {
-  if ($("#notificacion")) {
-    $("#notificacion").css('display', 'block');
-    $("#notificacion").delay(6500).fadeOut(1500,"swing");
-  }
-});
+
+  $("#submit").click(function (e) {
+    e.preventDefault();
+    let reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    let name = $("#name")[0].value;
+    let email = $("#email")[0].value;
+    let message = $("#message")[0].value
+
+    if(name != "" && email != "" && message != ""){
+      if(reg.test(email)) {
+
+        $.ajax({
+          url: 'http://localhost:3001/mail/enviarEmail',
+          method: "POST",
+          data: JSON.stringify({
+            email: email,
+            nombre: name,
+            mensaje: message,
+            codigo: "enviodecorreosdeEulogio"
+          }),
+          cache: false,
+          contentType: "application/json",
+          processData: false,
+          success: function(respuesta) {
+            if ($("#notificacion")) {
+              $("#notificacion").css('display', 'block');
+              $("#notificacion").delay(6500).fadeOut(1500,"swing");
+            }
+          },
+          error: function() {
+            if ($("#notificacionError")) {
+              $("#notificacionError").css('display', 'block');
+              $("#notificacionError").delay(6500).fadeOut(1500,"swing");
+            }
+          }
+        });
+      }else{
+        if ($("#notificacionEmailError")) {
+          $("#notificacionEmailError").css('display', 'block');
+          $("#notificacionEmailError").delay(6500).fadeOut(1500,"swing");
+        }
+      }     
+    }else{
+      if ($("#notificacionVacio")) {
+        $("#notificacionVacio").css('display', 'block');
+        $("#notificacionVacio").delay(6500).fadeOut(1500,"swing");
+      }
+    }
+  });
 
 });
