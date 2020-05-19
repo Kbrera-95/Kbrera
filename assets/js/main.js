@@ -125,7 +125,7 @@ $('.main-products__content').slick({
       if(reg.test(email)) {
 
         $.ajax({
-          url: 'http://localhost:3001/mail/enviarEmail',
+          url: 'http://31.220.56.153:3001/mail/enviarEmail',
           method: "POST",
           data: JSON.stringify({
             email: email,
