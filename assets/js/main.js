@@ -115,6 +115,7 @@ $('.main-products__content').slick({
 
   $("#submit").click(function (e) {
     e.preventDefault();
+    $("#submit").attr('disabled', true)
     let reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
     let name = $("#name")[0].value;
     let email = $("#email")[0].value;
@@ -142,6 +143,7 @@ $('.main-products__content').slick({
             }
           },
           error: function() {
+            $("#submit").attr('disabled', false)
             if ($("#notificacionError")) {
               $("#notificacionError").css('display', 'block');
               $("#notificacionError").delay(6500).fadeOut(1500,"swing");
@@ -149,12 +151,14 @@ $('.main-products__content').slick({
           }
         });
       }else{
+        $("#submit").attr('disabled', false)
         if ($("#notificacionEmailError")) {
           $("#notificacionEmailError").css('display', 'block');
           $("#notificacionEmailError").delay(6500).fadeOut(1500,"swing");
         }
       }     
     }else{
+      $("#submit").attr('disabled', false)
       if ($("#notificacionVacio")) {
         $("#notificacionVacio").css('display', 'block');
         $("#notificacionVacio").delay(6500).fadeOut(1500,"swing");
